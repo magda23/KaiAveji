@@ -1,0 +1,603 @@
+body{
+	margin: 0;
+}
+.container{
+	width: 1000px;
+	margin: auto;
+}
+.header-block{
+	background-color: #333333;
+}
+.header-items{
+	height: 90px;
+}
+.logo-a{
+	width: 200px;
+	display: block;
+}
+.logo-block img{
+	width: 100%;
+}
+.navigation, .nav, .menu{
+	height: 100%;
+}
+.menu-item{
+	margin-left: 20px;
+	font-size: 13px;
+	color: #AAAAAA;
+	position: relative;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.menu-item:first-child{
+	margin-left: 0;
+}
+.nav-a{
+	font-size: 13px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.nav-a:after{
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 0;
+	background-color: #45a9f6;
+	bottom: 7px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+.nav-a:hover:after{
+	visibility: visible;
+	opacity: 1;
+	width: 100%;
+}
+.menu-item:hover{
+	text-decoration: none;
+	color: #45a9f6;
+	-webkit-transition: all 2s;
+}
+.prodact{
+	position: relative;
+}
+.prodact:hover .inner-block{
+	visibility: visible;
+	opacity: 1;
+}
+.inner-block{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+	width: 200px;
+	top: 91%;
+	background: rgba(242, 242, 242, 0.95);
+	padding: 5px;
+	z-index: 2;
+	box-shadow: 0px 0px 5px 0px #000000;
+}
+.list{
+	color: #242424!important;
+	font-size: 13px;
+	font-family: 'BPG Nino Mtavruli';
+	padding: 9px 15px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #BFBFBF;
+}
+.list:hover{
+	transition: 0.8s;
+	background-color: #555555;
+	color: #fff!important;
+	border-bottom: 1px solid #BFBFBF;
+}
+.list:hover .menu-item:after{
+	display: none;
+}
+
+/*<!--chatbox-->*/
+.button{
+    position: fixed;
+    right: 50px;
+    z-index: 3;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 40px rgba(0,0,0,.16);
+}
+.btn-chat{
+	border: none;
+	width: 60px;
+    height: 60px;
+    background-color: #ED832F;
+    border-radius: 50%;
+    box-shadow: 0 5px 40px rgba(0,0,0,.16);
+}
+.btn-chat .fa-times{
+	display: none;
+}
+.btn-chat.active .fa-times{
+	display: block;
+}
+.btn-chat.active .fa-comment-alt{
+	display: none;
+}
+.close-btn{
+	background: inherit;
+	border: none;
+}
+.btn-chat:focus,.close-btn:focus{
+	outline: none;
+}
+.btn-chat i{
+	color: #fff;
+	font-size: 20px;
+}
+.message{
+	position: absolute;
+	right: 70px;
+	top: 20px;
+	width: 300px;
+	height: auto;
+	background-color: #fff;
+	border-radius: 5px;
+	display: none;
+	box-shadow: 0 5px 40px rgba(0,0,0,.16);
+}
+.message.active{
+	display: block;
+}
+.left-logo{
+	width: 60px;
+	height: 60px;
+}
+.left-logo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.offline-p{
+	margin-left: 20px;
+	color: #6a6969;
+	font-size: 12px;
+	font-family: 'BPG Excelsior DejaVu 2010';
+}
+.message-content{
+	padding: 10px;
+}
+.message_link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fafafb;
+	height: 50px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.link-a{
+	color: #fff!important;
+	font-size: 12px;
+	font-family: 'BPG Excelsior DejaVu 2010';
+	padding: 3px 10px;
+	border: 1px solid #0f9bd2;
+	background-color: #0f9bd2;
+	border-radius: 25px;
+}
+.link-a:hover{
+	box-shadow: 0px 0px 3px 0px #555555;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #085d96), color-stop(1, #11a5db));
+}
+.main-block{
+	height: 400px;
+	background-color: #156d37;
+}
+.info-block{
+	margin: 40px 135px;
+	text-align: center;
+}
+.info-h{
+	color: #fff;
+	font-size: 35px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.bank-p{
+	color: #fff;
+	font-size: 14px;
+	font-family: 'BPG Nino Mtavruli normal';
+	margin-top: 10px;
+}
+.s1{
+	position: relative;
+    max-width: 930px;
+    height: 350px;
+  	margin:auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.6);
+}
+.img-slide img{
+	width: 100%;
+	height: 100%;
+}
+.s1 .swiper-button-next:after,.swiper-button-prev:after{
+	content: '';
+}
+.s1 .swiper-button-next,.swiper-button-prev{
+	font-size: 25px;
+	color: #fff;
+}
+.s1 .swiper-button-disabled{
+	opacity: 1;
+}
+.slider-info{
+	position: absolute;
+	bottom: 10px;
+	width: 860px;
+	opacity: 0.7;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+	left: 60px;
+	padding: 20px;
+}
+.slider-info .slider-h,.slider-p{
+	color: #fff;
+}
+.slider-h{
+	font-size: 20px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.slider-p{
+	font-size: 14px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.gallery-block{
+	margin-top: 200px;
+}
+.box{
+	margin-bottom: 20px;
+}
+.img-box{
+	width: 220px;
+	height: 120px;
+	border: 3px solid #eee;
+}
+.img-box img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+.img-box img:hover{
+	box-shadow: 0 0 11px 0px #555555;
+	transition: 0.7s;
+}
+.line{
+	border-bottom: 1px solid #ccc;
+	height: 1px;
+}
+.box-h{
+	color: #555;
+	font-size: 15px;
+	font-family: 'BPG Nino Mtavruli';
+	margin: 5px 0 10px;
+}
+.box-p{
+	margin-top: 10px;
+	color: #6a6969;
+	font-size: 14px;
+	font-family: 'BPG Excelsior DejaVu 2010';
+}
+.line_block{
+	margin: 40px auto;
+	height: 5px;
+	box-shadow: 0px 5px 5px 0px rgba(204,204,204, 0.6);
+}
+.brands{
+	margin-bottom: 30px;
+}
+.brand-logo{
+	width: 100%;
+	height: 50px;
+	background: #f3f3f3;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.brand-logo img{
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.brand-h{
+	color: #555555;
+	font-size: 15px;
+	font-family: 'BPG Nino Mtavruli';
+	margin-top: 10px;
+}
+.line-item{
+	border-bottom: 1px solid #CCCCCC;
+	margin: 15px 0 40px;
+}
+.footer{
+	padding-top: 10px;
+	background-color: #000;
+}
+.footer-bg{
+	background-color: #222222;
+}
+.social-icons{
+	height: 80px;
+}
+.media{
+	background: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+.media img{
+	width: 50px;
+}
+.green-block{
+	height: 50px;
+	margin-top: 2px;
+	background-color: #156d37;
+}
+.copy-right{
+	background-color: #111111;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.copy{
+	color: #8A96A0;
+	font-size: 13px;
+	font-family: 'BPG Excelsior DejaVu 2010';
+}
+.fb i:hover{
+	color: #0e5cb1;
+	transition: 0.8s;
+}
+.twit i:hover{
+	color: #13afd4;
+	transition: 0.8s;
+}
+.youtube i:hover{
+	color: #DD4B39;
+	transition: 0.8s;
+}
+.google i:hover{
+	color: #BFBFBF;
+	transition: 0.8s;
+}
+.linkedin i:hover{
+	color: #2867B2;
+	transition: 0.8s;
+}
+.price-block{
+	margin: 50px 0;
+}
+.tb-title{
+	color: #45a9f6;
+	font-size: 35px;
+	border-top: none!important;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.price-line{
+	border-bottom: none!important;
+}
+.price-list{
+	color: #6a6969;
+	font-size: 16px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.menu-block{
+	box-shadow: 0 4px 6px #eaeaea;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;
+}
+.menu-block_title{
+	background-color: #45a9f6;
+    color: #fff;
+    padding: 8px 10px 6px;
+    font-size: 16px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.sort{
+	border-top: 1px solid #EEEEEE;
+	padding: 8px 10px 6px;
+	color: #333333!important;
+	font-size: 13px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.sort i{
+	color: #fff;
+	font-size: 14px;
+	margin-right: 10px;
+	display: none;
+}
+.contact{
+	margin: 50px 0;
+}
+.title-h{
+	border-bottom: 1px solid #CCCCCC;
+}
+.gift{
+	color: #006428;
+	font-size: 40px;
+	margin: 20px 0;
+	font-family: 'BPG Nino Mtavruli';
+}
+/*form*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+}
+input[type=submit] {
+  background-color: #11a5db;
+  color: #f7f7f7;
+  font-size: 13px;
+  font-family: 'BPG Nino Mtavruli';
+  padding: 12px 20px;
+  border: 1px solid #0785b3;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0px 0px 3px 0px #555555;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #085d96), color-stop(1, #11a5db));
+}
+textarea{
+	height: 100px;
+	color: #333;
+	font-size: 16px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.info-contact{
+	margin-top: 50px;
+}
+.contact-form label,select{
+	color: #333333;
+	font-size: 16px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+.contact-id{
+	margin-bottom: 10px;
+}
+.cont{
+	color: #006428;
+	font-size: 20px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.contact-id i{
+	margin-right: 10px;
+}
+.gallery{
+	margin-top: 50px;
+}
+.kitch-img{
+	height: 140px;
+	margin-bottom: 20px;
+}
+.kitch-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.reception{
+	height: 200px;
+}
+.reception img{
+	height: 100%;
+}
+.paint-img{
+	height: 140px;
+	margin-bottom: 20px;
+}
+.paint-img img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.img-detail{
+	width: 100%;
+	height: 300px;
+}
+.img-detail img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.desc-furniture{
+	margin-top: 30px;
+}
+.desc-h2{
+	color: #008344;
+	font-size: 25px;
+	border-bottom: 1px solid;
+	margin-bottom: 10px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.price{
+	color: #000;
+	font-size: 22px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.desc-h{
+	color: #7c8194;
+	font-size: 20px;
+	margin: 30px 0 10px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.desc-p{
+	color: #000;
+	font-size: 18px;
+	font-family: 'BPG Nino Mtavruli normal';
+}
+/*lightbox*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
